@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="aboutme.css" type="text/css"></link>
+    <link rel="stylesheet" media="screen" href="aboutme.css" type="text/css" />
     <title>ABOUT ME</title>
 </head>
 <body>
@@ -19,8 +19,9 @@
         </nav>
         <hr/>
     </header>
+
     <main>
-        <section class="whoAmI">
+        <section class="who-am-i">
             
             <h1> Who am I?</h1>
             <p> My name is Aadhar Sharma, I am a senior at UCSD majoring in Computer Engineering. 
@@ -47,13 +48,13 @@
             </div>
         </section>
 
-        <section class="skillsAndGoals">
+        <section class="skills-and-courses grid-container">
 
-            <div class="skills">
-                <h2 class="skills">Skills</h2>
+            <div id="skills-container">
+                <h2 id="skills-header"> Skills </h2>
 
-                <div id="skillsLists" class="skills">
-                    <ul id="skills1" class="skills"> 
+                <div id="skills-list">
+                    <ul id="skills1">
                         <li> Java </li>
                         <li> Python </li>
                         <li> C/C++ </li>
@@ -62,7 +63,8 @@
                         <li> CSS </li>
                         <li> Javascipt </li>
                     </ul>
-                    <ul id="skills2" class="skills">
+
+                    <ul id="skills2">
                         <li> ARM </li>
                         <li> MATLAB </li>
                         <li> Linux </li>
@@ -72,25 +74,10 @@
                         <li> Agile Development </li>
                     </ul>
                 </div>
-
             </div>
-
-            <div class="goals">
-                <h2>Goals/Interests</h2>
-                <ul id="goalsList"> 
-                    <li> Graduate with a Bachelors in Science in Computer Engieering </li>
-                    <li> Get a Masters of Science in a Computer Science related field </li>
-                    <li> Get into a UCSD Machine Learning research group </li>
-                    <li> Wake up at 7am everyday </li>
-                    <li> Learn to cook more food and different variety of food </li>
-                </ul>
-            </div>
-
-        </section>
-
-        <section class="coursework">
-            <div class="coursework">
-                <h2 id="courseworkheader" class="coursework">Coursework</h2>
+            
+            <div id="courses-container">
+                <h2 id="courses-header">Coursework</h2>
                 <ul>
                     <li> Operating Systems </li>
                     <li> Deep Learning </li>
@@ -100,11 +87,26 @@
                     <li> Data Structures </li>
                     <li> Digital Logic Design </li>
                     <li> Statistical NLP </li>
+                    <li> Web Development </li>
                 </ul>
             </div>
 
-            <div class="hobbies">
-                <h2 id="hobbiesheader" class="hobbies">Hobbies</h2>
+        </section>
+
+        <section class="goals-and-hobbies grid-container">
+            <div id="goals-container">
+                <h2 id="goals-header">Goals/Interests</h2>
+                <ul id="goalsList"> 
+                    <li> Graduate with a Bachelors in Science in Computer Engieering </li>
+                    <li> Get a Masters of Science in a Computer Science related field </li>
+                    <li> Get into a UCSD Machine Learning research group </li>
+                    <li> Wake up at 7am everyday </li>
+                    <li> Learn to cook more food and different variety of food </li>
+                </ul>
+            </div>
+
+            <div id="hobbies-contain">
+                <h2 id="hobbies-header">Hobbies</h2>
                 <ul>
                     <li> Playing/Watching basketball </li>
                     <li> Sketching/Drawing </li>
@@ -112,19 +114,23 @@
                     <li> Going to the gym </li>
                 </ul>
             </div>
-
-            <!-- <img src="imgs/coding.jpeg" alt="coding img" width="300" height="200"/>
-            <img src="imgs/basketball.jpeg" alt="basketball img" width="300" height="200"/>
-            <img src="imgs/nn.jpeg" alt="nn img" width="300" height="200"/>
-            <img src="imgs/ucsd.png" alt="ucsd logo" width="200" height="200"/> -->
         </section>
 
-        <section class="resume">
-            <h2> Resume </h2>
-            <button type="button"> Download </button>
+        <p id="resume">
+            <a href="imgs/AadharSharmaResume.pdf" target="_blank"> DOWNLOAD RESUME </a>
+        </p>
 
-        </section>
     </main>
-    <footer> </footer>
+
+    <footer>
+        <my-icons>
+            <a href="https://github.com/AadharSharma7" target="_blank" title="Go to Github">
+                <img src="imgs/github_icon.png" alt="Link to Github" width="35">
+            </a>
+            <a href="https://www.linkedin.com/in/aadhar-sharma-4089b519b/" target="_blank" title="Go to LinkedIn">
+                <img src="imgs/linkedin_icon.png" alt="Link to LinkedIn" width="35">
+            </a>
+        </my-icons>
+    </footer>
 </body>
 </html>
