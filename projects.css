@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    -border: 1px solid blue;
+}
+
+:root {
+    font-family: sans-serif;
+    --void: #0e0b16;
+    --fuschia: #a239ca;
+    --jewel: #4717f6;
+    --stark: #e7dfdd;
+}
+
+main {
+    background-color: var(--void);
+    color: var(--stark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--stark);
+    transition: ease-in-out 0.3s;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--void);
+}
+
+nav {
+    display: flex;
+    background-color: var(--jewel);
+    color: var(--stark);
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 4rem 0 2rem 2rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 5rem 1rem 1rem 1rem;
+}
+
+section a {
+    text-decoration: none;
+    color: var(--stark);
+    transition: ease-in-out 0.3s;
+}
+
+section a:visited {
+    text-decoration: none;
+}
+
+section a:hover {
+    color: var(--fuschia);
+}
+
+section.projects1 {
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(2,1fr);
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.projects2 {
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(2,1fr);
+}
+
+img {
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: ease-in-out 0.3s;
+}
+
+img:hover {
+    filter: brightness(50%);
+}
+
+img[src="imgs/nn.jpeg"] {
+    width: 25rem;
+    height: 25rem;
+}
+
+.futureplans h2 {
+    padding-top: 5rem;
+}
+
+.futureplans p {
+    padding: 0 2rem 5rem 5rem;
+    margin-left: 20rem;
+    margin-right: 25rem;
+    justify-content: center;
+    text-align: justify;
+}
+
+p#github, p#description {
+    text-align: center;
+}

@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="aboutme.css" type="text/css"></link>
     <title>ABOUT ME</title>
-    
 </head>
 <body>
     <header>
         <nav>
-            <a href="/index.html">HOME</a> |
-            <a href="/aboutme.html">ABOUT ME</a> |
-            <a href="/experience.html">EXPERIENCE</a> |
-            <a href="/projects.html">PROJECTS</a> |
-            <a href="/contact.html">CONTACT</a> |
-            <a href="/experimental.html">EXPERIMENTAL</a> 
+            <a href="/index.html">HOME</a>
+            <a href="/aboutme.html">ABOUT ME</a>
+            <a href="/experience.html">EXPERIENCE</a>
+            <a href="/projects.html">PROJECTS</a>
+            <a href="/contact.html">CONTACT</a>
+            <a href="/experimental.html">EXPERIMENTAL</a>
         </nav>
         <hr/>
     </header>
     <main>
-        <section> 
+        <section class="whoAmI">
+            
             <h1> Who am I?</h1>
             <p> My name is Aadhar Sharma, I am a senior at UCSD majoring in Computer Engineering. 
                 I live in Fremont, California with my parents and younger brother. 
@@ -36,38 +37,47 @@
                 Finally, at the age of 12 in 2013, we moved to Fremont, California, and have been living here ever since. 
                 All this interantional exposure at a young age has trained me to be able to adapt easily in any environment.
             </p>
-            <img src="imgs/aadhar4.PNG" alt="aadhar img" width="300" height="500" />
-            <img src="imgs/aadhar2.png" alt="aadhar img" width="400" height="500" />
-            <img src="imgs/aadhar3.png" alt="aadhar img" width="400" height="500" />
-            <img src="imgs/india.png" alt="india flag" width="400" height="300" />
-            <img src="imgs/malaysia.png" alt="malaysia flag" width="400" height="300" />
-            <img src="imgs/china.png" alt="china flag" width="400" height="300" />
-            <img src="imgs/usa.png" alt="usa flag" width="400" height="300" />
-            <img src="imgs/worldmap.jpeg" alt="word map" width="400" height="300" />
+            
+            <div>
+                <img class="flags" src="imgs/india.png" alt="india flag" width="400" height="300" />
+                <img class="flags" src="imgs/malaysia.png" alt="malaysia flag" width="400" height="300" />
+                <img src="imgs/aadhar2.png" alt="aadhar img" width="400" height="500" />
+                <img class="flags" src="imgs/china.png" alt="china flag" width="400" height="300" />
+                <img class="flags" src="imgs/usa.png" alt="usa flag" width="400" height="300" />
+            </div>
         </section>
 
-        <section>
-            <div>
-                <h2>Skills</h2>
-                <ul> 
-                    <li> Java </li>
-                    <li> Python </li>
-                    <li> C/C++ </li>
-                    <li> Android Studios </li>
-                    <li> HTML, CSS </li>
-                    <li> Javascipt </li>
-                    <li> ARM </li>
-                    <li> MATLAB </li>
-                    <li> Linux </li>
-                    <li> Unix </li>
-                    <li> Windows </li>
-                    <li> Git/Github </li>
-                    <li> Agile Development </li>
-                </ul>
+        <section class="skillsAndGoals">
+
+            <div class="skills">
+                <h2 class="skills">Skills</h2>
+
+                <div id="skillsLists" class="skills">
+                    <ul id="skills1" class="skills"> 
+                        <li> Java </li>
+                        <li> Python </li>
+                        <li> C/C++ </li>
+                        <li> Android Studios </li>
+                        <li> HTML </li>
+                        <li> CSS </li>
+                        <li> Javascipt </li>
+                    </ul>
+                    <ul id="skills2" class="skills">
+                        <li> ARM </li>
+                        <li> MATLAB </li>
+                        <li> Linux </li>
+                        <li> Unix </li>
+                        <li> Windows </li>
+                        <li> Git/Github </li>
+                        <li> Agile Development </li>
+                    </ul>
+                </div>
+
             </div>
-            <div>
+
+            <div class="goals">
                 <h2>Goals/Interests</h2>
-                <ul> 
+                <ul id="goalsList"> 
                     <li> Graduate with a Bachelors in Science in Computer Engieering </li>
                     <li> Get a Masters of Science in a Computer Science related field </li>
                     <li> Get into a UCSD Machine Learning research group </li>
@@ -75,10 +85,12 @@
                     <li> Learn to cook more food and different variety of food </li>
                 </ul>
             </div>
+
         </section>
-        <section>
-            <div>
-                <h2>Coursework</h2>
+
+        <section class="coursework">
+            <div class="coursework">
+                <h2 id="courseworkheader" class="coursework">Coursework</h2>
                 <ul>
                     <li> Operating Systems </li>
                     <li> Deep Learning </li>
@@ -91,8 +103,8 @@
                 </ul>
             </div>
 
-            <div>
-                <h2>Hobbies</h2>
+            <div class="hobbies">
+                <h2 id="hobbiesheader" class="hobbies">Hobbies</h2>
                 <ul>
                     <li> Playing/Watching basketball </li>
                     <li> Sketching/Drawing </li>
@@ -101,15 +113,15 @@
                 </ul>
             </div>
 
-            <img src="imgs/coding.jpeg" alt="coding img" width="300" height="200"/>
+            <!-- <img src="imgs/coding.jpeg" alt="coding img" width="300" height="200"/>
             <img src="imgs/basketball.jpeg" alt="basketball img" width="300" height="200"/>
             <img src="imgs/nn.jpeg" alt="nn img" width="300" height="200"/>
-            <img src="imgs/ucsd.png" alt="ucsd logo" width="200" height="200"/>
+            <img src="imgs/ucsd.png" alt="ucsd logo" width="200" height="200"/> -->
         </section>
 
-        <section>
+        <section class="resume">
             <h2> Resume </h2>
-            <button> Download </button>
+            <button type="button"> Download </button>
 
         </section>
     </main>
