@@ -16,7 +16,10 @@
 }
 
 main {
-    background-color: var(--void);
+    /* background-color: var(--void); */
+    background-image: url("imgs/matrix_gif.gif");
+    background-repeat: no-repeat;
+    background-size: 115%;
     color: var(--stark);
 }
 
@@ -85,6 +88,7 @@ img {
 main > section > p {
     padding: 1rem;
     font-size: 2rem;
+    /* background-color: var(--void); */
 }
 
 h1 {
@@ -130,6 +134,14 @@ img#aadhar-pic:hover {
 
     nav {
         display: block;
+    }
+
+    main {
+        /* background-color: var(--void); */
+        background-image: url("imgs/matrix_gif.gif");
+        background-repeat: repeat;
+        background-size: 115%;
+        color: var(--stark);
     }
     
 }
