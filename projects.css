@@ -106,7 +106,7 @@ main img {
 }
 
 main img:hover {
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 img[src="imgs/nn.jpeg"] {
@@ -124,10 +124,6 @@ img[src="imgs/nn.jpeg"] {
     margin-right: 25rem; */
     justify-content: center;
     text-align: justify;
-}
-
-p#github, p#description {
-    text-align: center;
 }
 
 @media only screen and (max-width:770px) {

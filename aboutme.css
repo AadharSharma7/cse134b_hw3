@@ -65,6 +65,7 @@ nav {
 
 h1 {
     padding: 1rem;
+    font-size: 3rem;
 }
 
 .who-am-i p {
@@ -91,6 +92,7 @@ img[src="imgs/india.png"] {
     grid-row: 1 / 1;
     grid-column: 1 / 1;
     justify-self: center;
+    height: 57%;
 }
 
 img[src="imgs/malaysia.png"] {
@@ -103,6 +105,7 @@ img[src="imgs/china.png"] {
     grid-row: 1 / 1;
     grid-column: 3 / 3;
     justify-self: center;
+    height: 57%;
 }
 
 img[src="imgs/usa.png"] {
